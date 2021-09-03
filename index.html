@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <title>Tic Tac Toe - By Eli Sade</title>
+	  <link rel="stylesheet" href="./myStyle.css" />
+    <body>
+      <br />
+	  <!-- TOP HEADER -->
+	  <div id="title">
+		<span>PLAY</span>
+		<h1>Tic-Tac-Toe</h1>
+	  </div>      
+      <br />
+	  <!-- STATUS BAR -->
+	  <div id="sttsBar">
+	  Eli is the winner !!!
+	  </div>
+	  <br />
+	  <div id="boxes">
+
+		<!-- PLAYER 1 BOX -->
+		<div id="leftbox">
+			<h3 id="pl1Name">Player 1 - O</h3>
+			<input type="text" placeholder="Enter your name" id="p1Txt">
+		</div> 
+
+		<!-- MAIN GAME PANEL BOX -->
+		<div id="middlebox">
+			<table border="1" id="panel">
+				<tr>
+					<td style="background-color: #ff3333" onclick="playGame(1)" onmouseover="tdOver(1)" onmouseout="tdOut(1)" id="td1"><img src="./x.png" id="img1" /></td>
+					<td onclick="playGame(2)" onmouseover="tdOver(2)" onmouseout="tdOut(2)" id="td2"></td>
+					<td onclick="playGame(3)" onmouseover="tdOver(3)" onmouseout="tdOut(3)" id="td3"></td>
+				</tr>
+				<tr>
+					<td onclick="playGame(4)" onmouseover="tdOver(4)" onmouseout="tdOut(4)" id="td4"></td>
+					<td style="background-color: #3399cc" onclick="playGame(5)" onmouseover="tdOver(5)" onmouseout="tdOut(5)" id="td5"><img src="./o.png" id="img5" /></td>
+					<td onclick="playGame(6)" onmouseover="tdOver(6)" onmouseout="tdOut(6)" id="td6"></td>
+				</tr>
+				<tr>
+					<td onclick="playGame(7)" onmouseover="tdOver(7)" onmouseout="tdOut(7)" id="td7"></td>
+					<td onclick="playGame(8)" onmouseover="tdOver(8)" onmouseout="tdOut(8)" id="td8"></td>
+					<td onclick="playGame(9)" onmouseover="tdOver(9)" onmouseout="tdOut(9)" id="td9"></td>
+				</tr>
+			</table>
+		</div>		  
+
+		<!-- PLAYER 2 BOX -->
+		<div id="rightbox">
+			<h3 id="pl2Name">Player 2 - X</h3>
+			<input type="text" placeholder="Enter your name" id="p2Txt">
+		</div>
+	</div>
+
+	<!-- NEW GAME / START BUTTON -->
+	<div id="newGame">
+		<br /><br />
+		<button type="button" class="btn btn-danger" onclick="btn()" id="gameBtn">New Game</button>
+	</div>
+	<script src="./myJS.js"></script>
+    </body>
+  </head>
+</html>
